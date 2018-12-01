@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Mosk";
+  src: url("../src/fonts/Cocogoose-Compressed-Regular-Trial.ttf");
+}
+
+@font-face {
+  font-family: "Moskl";
+  src: url("../src/fonts/Mosk\ Light\ 300.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    61deg,
+    rgb(9, 40, 44) 0%,
+    rgb(18, 93, 105) 59%,
+    rgb(7, 156, 179) 100%
+  );
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.side-nav-body {
+  margin-left: 15%; /* Same as the width of the sidenav */
+  font-size: 18px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  .btn-info-modified {
+    background-color: #17a2b800;
+    border-color: #17a2b800;
+  }
+}
+.btn-outline-info-modified {
+  color: white;
+  border: none;
+  text-align: -webkit-left;
+  font-family: Moskl;
+}
+.unread-items-count {
+  margin-left: 10px;
+}
+
+/* Cardcounter CSS begins here */
+.counter-card-title {
+  font-size: 16px;
+  color: white;
+}
+.counter-card-count {
+  font-size: 45px;
+  color: white;
+}
+.card-feature-request {
+  background-color: #11995b;
+}
+.card-support {
+  background-color: #1e2d7c;
+}
+.card-bug {
+  background-color: #7c1e1e;
+}
+.card-task {
+  background-color: #217799;
+}
+.card-unassigned {
+  background-color: #392469;
+}
